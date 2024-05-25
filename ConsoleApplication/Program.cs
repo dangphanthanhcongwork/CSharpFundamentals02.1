@@ -4,14 +4,14 @@ using System.Linq;
 
 class Program
 {
-    static List<Member> members = new List<Member>
-    {
+    static readonly List<Member> members =
+    [
         new Member { FirstName = "Phan Thành Công", LastName = "Đặng", Gender = Gender.Male, DateOfBirth = new DateTime(2000, 6, 15), PhoneNumber = "0375.284.637", Birthplace = "Lâm Đồng", IsGraduated = true },
         new Member { FirstName = "Mỹ Linh", LastName = "Nguyễn", Gender = Gender.Female, DateOfBirth = new DateTime(1995, 6, 2), PhoneNumber = "0375.284.636", Birthplace = "Hà Nội", IsGraduated = true },
         new Member { FirstName = "Mai Phương", LastName = "Trần", Gender = Gender.Female, DateOfBirth = new DateTime(2001, 4, 5), PhoneNumber = "0375.284.635", Birthplace = "Hải Phòng", IsGraduated = false },
         new Member { FirstName = "Thu Hà", LastName = "Phạm", Gender = Gender.Female, DateOfBirth = new DateTime(2002, 1, 1), PhoneNumber = "0375.284.634", Birthplace = "Thái Bình", IsGraduated = false },
         new Member { FirstName = "Minh Quang", LastName = "Nguyễn", Gender = Gender.Male, DateOfBirth = new DateTime(1994, 7, 4), PhoneNumber = "0375.284.633", Birthplace = "Hà Nội", IsGraduated = true },
-    };
+    ];
 
     static List<Member> GetMaleMembers()
     {
